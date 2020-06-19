@@ -1,0 +1,168 @@
+
+.textAnimated
+{
+	user-select: none;
+}
+
+.textAnimated .container
+{
+	display: flex;
+	align-items: center;
+	flex-flow: row nowrap;
+	justify-content: center;
+
+	padding-bottom: 0;
+}
+
+.textAnimated p
+{
+	font-size: 3vw;
+	font-weight: bold;
+
+	text-align: center;
+
+	color: #FFFFFF;
+}
+
+.textAnimated span
+{
+	font-size: 3vw;
+
+	margin-left: 15px;
+
+	opacity: 0.7;
+	color: #FFFFFF;
+}
+
+.content
+{
+	flex-grow: 1;
+}
+
+.article__textContent > a {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    transition: 0.3s all;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.content .container
+{
+	display: grid;
+
+	padding: 50px;
+
+	grid-gap: 25px;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.content__article
+{
+	display: inline-flex;
+	flex-flow: column nowrap;
+
+	width: 100%;
+	margin: 0px;
+	margin-bottom: 15px;
+	padding: 10px;
+
+	background-color: #FFFFFF;
+	box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+#forArticle
+{
+	grid-template-columns: 1fr;
+}
+
+#forArticle .content__article img
+{
+	height: 300px;
+}
+
+#forArticle h1
+{
+	font-size: 39px;
+
+	margin: 35px 50px;
+
+	text-align: center;
+	text-transform: uppercase;
+}
+
+#forArticle h2, #forArticle h3, #forArticle h4
+{
+	margin: 30px 0;
+}
+
+#forArticle .article__textContent
+{
+	padding: 25px 150px;
+}
+
+#forArticle .article__textContent p
+{
+	font-size: 26px;
+}
+
+.content__article > img
+{
+	width: 100%;
+	margin-right: 5px;
+	margin-bottom: 35px;
+
+	box-shadow: 1px 3px 5px rgba(116, 116, 116, 0.2);
+}
+
+.article__textContent
+{
+	margin-bottom: 35px;
+	padding: 0 35px;
+}
+
+.article__textContent > h2
+{
+	font-size: 22px;
+	font-weight: bold;
+
+	margin-bottom: 20px;
+
+	transition: 0.3s all;
+	text-decoration: none;
+	text-transform: uppercase;
+
+	color: #000000;
+}
+
+.content__article:hover .article__textContent > h2
+{
+	color: #AAAAAA;
+}
+
+.back
+{
+	font-weight: bold;
+
+	display: inline-block;
+
+	margin-bottom: 35px;
+	padding: 15px 30px;
+
+	transition: 0.3s all;
+
+	opacity: 0.6;
+	background-color: #FFFFFF;
+	box-shadow: 2px 5px 10px rgba(116, 116, 116, 0.3);
+
+	justify-self: flex-start;
+}
+
+.back:hover
+{
+	padding-right: 50px;
+
+	opacity: 1;
+}

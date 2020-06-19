@@ -1,0 +1,94 @@
+@media screen and (max-width: 1440px)
+{
+	.textAnimated p, .textAnimated span
+	{
+		font-size: 4vw;
+	}
+}
+
+@media screen and (max-width: 1200px)
+{
+	.content .container
+	{
+		column-count: 2;
+	}
+	.textAnimated p, .textAnimated span
+	{
+		font-size: 5vw;
+	}
+	#forArticle .article__textContent
+	{
+		padding: 25px 50px;
+	}
+	#forArticle .article__textContent p
+	{
+		font-size: 19px;
+	}
+	#forArticle h2, #forArticle h3, #forArticle h4
+	{
+		margin: 10px 0;
+	}
+}
+
+@media screen and (max-width: 768px)
+{
+	.container
+	{
+		padding: 25px;
+	}
+	.content .container
+	{
+		padding: 25px 5px;
+
+		column-count: 1;
+	}
+	.header .container
+	{
+		flex-flow: column nowrap;
+
+		padding-bottom: 0;
+	}
+	.header .container h1
+	{
+		margin-bottom: 25px;
+	}
+	.header__menu
+	{
+		width: 100%;
+	}
+	.menu__item
+	{
+		flex-grow: 1;
+	}
+	#forArticle h1
+	{
+		font-size: 6vw;
+	}
+	#forArticle .article__textContent
+	{
+		padding: 25px 15px;
+	}
+	#forArticle .article__textContent p
+	{
+		font-size: 16px;
+	}
+	#forArticle h2, #forArticle h3, #forArticle h4
+	{
+		margin: 5px 0;
+	}
+	.content__article > img
+	{
+		margin-right: 0;
+	}
+	.content__article
+	{
+		padding: 0;
+	}
+	.back
+	{
+		display: block;
+
+		width: 300px;
+		margin: 25px auto;
+	}
+}
