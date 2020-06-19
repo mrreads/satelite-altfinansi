@@ -10,7 +10,7 @@
 {
 	.content .container
 	{
-		column-count: 2;
+		grid-template-columns: 1fr 1fr;
 	}
 	.textAnimated p, .textAnimated span
 	{
@@ -40,7 +40,7 @@
 	{
 		padding: 25px 5px;
 
-		column-count: 1;
+		grid-template-columns: 1fr;
 	}
 	.header .container
 	{
