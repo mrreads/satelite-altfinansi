@@ -1,10 +1,10 @@
 <?php 
     require_once(__DIR__ . '/php/Db.php');
-    define('url', $_SERVER['HTTP_HOST']);
+    define('URL', $_SERVER['HTTP_HOST']);
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,7 +22,7 @@
             <p id="typeText"></p>
         </div>
     </div>
-
+    
     <div class="content">
         <div class="container" id="forArticles">
             <?php
@@ -31,7 +31,7 @@
                     <div class='content__article'>
                     <img class='article__image' src='<?=$article['article_img']?>'>
                         <div class='article__textContent'> 
-                            <a href=''> <?=$article['article_title']?> </a>
+                            <a href='<?=$article['article_url'].'/'.'article'.'/'.$article['id_article']?>'> <?=$article['article_title']?> </a>
                             <p> <?=$article['article_pretext']?> </p>
                         </div>
                     </div> 
