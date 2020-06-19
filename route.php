@@ -15,6 +15,10 @@
             header("Location: /404.php");
         }
     }
+    else
+    {
+        header("Location: /404.php");
+    }
 ?>
    
 
@@ -23,15 +27,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/main.css">
+    <title> <?=$article['article_title']?> </title>
+    <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
     <? include('./components/Header/header.html'); ?>
 
-    <?php
-        print_r($article);
-    ?>
+    <div class="content">
+        <div class="container" id="forArticle">
+            <a href="/" class="back"> ОБРАТНО К СПИСКУ СТАТЕЙ </a>
+
+            <div class="content__article">
+                <h1> <?=$article['article_title']?> </h1>
+                <img class="article__image" src="<?=$article['article_img']?>">
+                <div class="article__textContent">
+                    <p> <?=$article['article_text']?> </p>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <? include('./components/Footer/footer.html'); ?>
 </body>
