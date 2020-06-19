@@ -31,7 +31,7 @@
     <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
-    <? include('./components/Header/header.html'); ?>
+    <? include('./components/Header/header.php'); ?>
 
     <div class="content">
         <div class="container" id="forArticle">

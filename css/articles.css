@@ -39,14 +39,18 @@
 	flex-grow: 1;
 }
 
-.article__textContent > a {
-    font-size: 22px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    transition: 0.3s all;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #000000;
+.article__textContent > a
+{
+	font-size: 22px;
+	font-weight: bold;
+
+	margin-bottom: 20px;
+
+	transition: 0.3s all;
+	text-decoration: none;
+	text-transform: uppercase;
+
+	color: #000000;
 }
 
 .content .container
@@ -111,6 +115,8 @@
 .content__article > img
 {
 	width: 100%;
+	min-height: 250px;
+	max-height: 250px;
 	margin-right: 5px;
 	margin-bottom: 35px;
 

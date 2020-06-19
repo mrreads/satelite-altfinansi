@@ -15,7 +15,7 @@
     <script src="./js/index.js" defer></script>
 </head>
 <body>
-    <? include('./components/Header/header.html'); ?>
+    <? include('./components/Header/header.php'); ?>
 
     <div class="textAnimated">
         <div class="container">
