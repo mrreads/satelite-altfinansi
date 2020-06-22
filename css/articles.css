@@ -55,12 +55,9 @@
 
 .content .container
 {
-	display: grid;
-
 	padding: 50px;
 
-	grid-gap: 25px;
-	grid-template-columns: 1fr 1fr 1fr;
+	column-count: 3;
 }
 
 .content__article
@@ -70,16 +67,22 @@
 
 	width: 100%;
 	margin: 0px;
-	margin-bottom: 15px;
+	margin-bottom: 35px;
 	padding: 10px;
 
 	background-color: #FFFFFF;
 	box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.3);
+
+	break-inside: avoid;
+	break-inside: avoid-column;
+	-webkit-column-break-inside: avoid;
+	page-break-inside: avoid;
+	page-break-inside: avoid;
 }
 
 #forArticle
 {
-	grid-template-columns: 1fr;
+	column-count: 1;
 }
 
 #forArticle .content__article img

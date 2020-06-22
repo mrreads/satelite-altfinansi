@@ -15,7 +15,7 @@
     <script src="./js/index.js" defer></script>
 </head>
 <body>
-    <? include('./components/Header/header.php'); ?>
+    <?php include('./components/Header/header.php'); ?>
 
     <div class="textAnimated">
         <div class="container">
@@ -35,11 +35,11 @@
                             <p> <?=$article['article_pretext']?> </p>
                         </div>
                     </div> 
-                <? }
+                <?php }
             ?>
         </div>
     </div>
     
-    <? include('./components/Footer/footer.html'); ?>
+    <?php include('./components/Footer/footer.html'); ?>
 </body>
 </html>
