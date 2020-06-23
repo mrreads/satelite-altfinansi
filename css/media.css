@@ -10,7 +10,7 @@
 {
 	.content .container
 	{
-		grid-template-columns: 1fr 1fr;
+		column-count: 2;
 	}
 	.textAnimated p, .textAnimated span
 	{
@@ -40,7 +40,7 @@
 	{
 		padding: 25px 5px;
 
-		grid-template-columns: 1fr;
+		column-count: 1;
 	}
 	.header .container
 	{
@@ -59,6 +59,10 @@
 	.menu__item
 	{
 		flex-grow: 1;
+	}
+	.textAnimated 
+	{
+		margin-top: 150px;
 	}
 	#forArticle h1
 	{
@@ -90,5 +94,13 @@
 
 		width: 300px;
 		margin: 25px auto;
+	}
+}
+
+@media screen and (max-width: 768px)
+{
+	.textAnimated 
+	{
+		margin-top: 170px;
 	}
 }

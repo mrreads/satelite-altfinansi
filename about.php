@@ -15,7 +15,7 @@
     <div class="content" style="display: flex; justify-content: center; align-items: center;">
         <div class="container" style="column-count: 1; height: 100%; grid-template-columns: 1fr;">
 
-            <h3 style="font-size: 4vw; text-align: center; color: #FFFFFF;"> О НАС </h3>
+            <h3 style="font-size: 4vw; text-align: center; color: #282727;"> О НАС </h3>
             
         </div>
     </div>

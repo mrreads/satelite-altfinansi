@@ -41,8 +41,9 @@ body
 
 	animation: backgroundAnim 240s;
 
-	background-image: url("./../img/background.jpg");
-	background-size: 10%;
+	/* background-image: url("./../img/backgroundWhite.jpg");
+	background-size: 10%; */
+	background-color: #f7f7f7;
 }
 
 @keyframes backgroundAnim
@@ -72,7 +73,13 @@ a
 
 	text-decoration: none;
 
-	color: #000000;
+	color: #282727;
+}
+
+span
+{
+	font-weight: bold;
+	font-size: x-large;
 }
 
 .container
@@ -80,4 +87,8 @@ a
 	max-width: 1440px;
 	margin: 0 auto;
 	padding: 50px;
+}
+
+#forArticle {
+	margin-top: 150px;
 }

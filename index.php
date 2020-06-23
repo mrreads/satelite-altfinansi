@@ -15,7 +15,7 @@
     <script src="./js/index.js" defer></script>
 </head>
 <body>
-    <?php include('./components/Header/header.php'); ?>
+    <? include('./components/Header/header.php'); ?>
 
     <div class="textAnimated">
         <div class="container">
@@ -28,18 +28,20 @@
             <?php
                 foreach(DB::queryAll("SELECT * FROM `articles`;") as $article)
                 { ?>
-                    <div class='content__article'>
-                    <img class='article__image' src='<?=$article['article_img']?>'>
-                        <div class='article__textContent'> 
-                            <a href='<?=$article['article_url'].'/'.'article'.'/'.$article['id_article']?>'> <?=$article['article_title']?> </a>
-                            <p> <?=$article['article_pretext']?> </p>
-                        </div>
-                    </div> 
+                    <a href='<?=$article['article_url'].'/'.'article'.'/'.$article['id_article']?>'>
+                        <div class='content__article'>
+                        <img class='article__image' src='<?=$article['article_img']?>'>
+                            <div class='article__textContent'> 
+                                <span> <?=$article['article_title']?> </span>
+                                <p> <?=$article['article_pretext']?> </p>
+                            </div>
+                        </div> 
+                    </a>
                 <?php }
             ?>
         </div>
     </div>
     
-    <?php include('./components/Footer/footer.html'); ?>
+    <? include('./components/Footer/footer.html'); ?>
 </body>
 </html>
