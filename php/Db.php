@@ -5,10 +5,10 @@
 
         public static function getDbh()
         {
-            $host = 'localhost';
+            $host = '127.0.0.1';
             $dbname = 'satellite';
             $user = 'root';
-            $pass = 'root';
+            $pass = '';
 
             self::$dbh = new PDO("mysql:host=$host;dbname=$dbname", $user, $pass);
             return self::$dbh;
