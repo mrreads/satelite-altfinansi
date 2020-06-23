@@ -13,7 +13,13 @@
             </div>
         </div>
 
-
         <p class="copyright"> СТРОИМ ВМЕСТЕ @ 2020 </p>
+    
+        <div class="categoryWrapper">
+            <?php foreach(DB::queryAll("SELECT * FROM `category`;") as $category)
+            { ?>
+                <a href="/<?=$category['category_techname'].'/'.'category'.'/'.$category['id_category']?>"> <?=$category['category_name']?> </a> </li>
+            <?php } ?>
+        </div>
     </div>
 </footer>

@@ -1,3 +1,4 @@
+<?php require_once(__DIR__ . '/php/Db.php'); ?>
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -20,6 +21,6 @@
         </div>
     </div>
 
-    <? include('./components/Footer/footer.html'); ?>
+    <? include('./components/Footer/footer.php'); ?>
 </body>
 </html>

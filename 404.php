@@ -1,3 +1,5 @@
+<?php require_once(__DIR__ . '/php/Db.php'); ?>
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -15,11 +17,11 @@
     <div class="content" style="display: flex; justify-content: center; align-items: center;">
         <div class="container" style="column-count: 1; height: 100%; grid-template-columns: 1fr;">
 
-            <h3 style="font-size: 4vw; text-align: center; color: #FFFFFF;"> СТРАНИЦА ЕЩЕ СТРОИТСЯ</h3>
+            <h3 style="font-size: 4vw; text-align: center; color: #000000;"> СТРАНИЦА ЕЩЕ СТРОИТСЯ</h3>
             
         </div>
     </div>
 
-    <? include('./components/Footer/footer.html'); ?>
+    <? include('./components/Footer/footer.php'); ?>
 </body>
 </html>

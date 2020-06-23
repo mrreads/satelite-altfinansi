@@ -11,7 +11,7 @@
     <title> Строим вместе - главная </title>
     <link rel="stylesheet" href="/css/main.css">
     
-    <script src="/js/lib/typed.min.js" defer></script>
+    <script src="./js/lib/typed.min.js" defer></script>
     <script src="./js/index.js" defer></script>
 </head>
 <body>
@@ -28,7 +28,7 @@
             <?php
                 foreach(DB::queryAll("SELECT * FROM `articles`;") as $article)
                 { ?>
-                    <a href='<?=$article['article_url'].'/'.'article'.'/'.$article['id_article']?>'>
+                    <a href='/<?=$article['article_url'].'/'.'article'.'/'.$article['id_article']?>'>
                         <div class='content__article'>
                         <img class='article__image' src='<?=$article['article_img']?>'>
                             <div class='article__textContent'> 
@@ -42,6 +42,6 @@
         </div>
     </div>
     
-    <? include('./components/Footer/footer.html'); ?>
+    <? include('./components/Footer/footer.php'); ?>
 </body>
 </html>
