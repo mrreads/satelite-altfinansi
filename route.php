@@ -64,7 +64,7 @@
 
             <div class="content__article">
                 <h1> <?=$article['article_title']?> </h1>
-                <img class="article__image" src="<?=$article['article_img']?>">
+                <img class="article__image" alt='изображение статьй'  src="<?=$article['article_img']?>">
                 <div class="article__textContent">
                     <p> <?=$article['article_text']?> </p>
                 </div>
@@ -81,7 +81,7 @@
                 { ?>
                     <a href='/<?=$article['article_url'].'/'.'article'.'/'.$article['id_article']?>'>
                         <div class='content__article'>
-                        <img class='article__image' src='<?=$article['article_img']?>'>
+                        <img class='article__image' alt='изображение статьй'  src='<?=$article['article_img']?>'>
                             <div class='article__textContent'> 
                                 <span> <?=$article['article_title']?> </span>
                                 <p> <?=$article['article_pretext']?> </p>
