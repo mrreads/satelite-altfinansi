@@ -25,6 +25,8 @@
     }
 
     $title = ($isArticle) ? $article['article_title'] : $categoryName;
+    $discription = ($isArticle) ? $article['article_pretext'] : "Статий про категории $categoryName";
+    
 ?>
    
 
@@ -34,6 +36,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> <?=$title?> </title>
+    <meta name="description" 
+    content="<?=$discription?>">
     <link rel="stylesheet" href="/css/main.css">
     <script src="/js/lib/typed.min.js" defer></script>
     <script src="/js/index.js"defer></script>
@@ -75,7 +79,7 @@
                 
                 foreach(DB::queryAll("SELECT * FROM `articles` WHERE `id_category` = $url[3];") as $article)
                 { ?>
-                    <a href='<?=$article['article_url'].'/'.'article'.'/'.$article['id_article']?>'>
+                    <a href='/<?=$article['article_url'].'/'.'article'.'/'.$article['id_article']?>'>
                         <div class='content__article'>
                         <img class='article__image' src='<?=$article['article_img']?>'>
                             <div class='article__textContent'> 

@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> О нас </title>
     <link rel="stylesheet" href="/css/main.css">
+    <meta name="description" 
+    content="Мы - пишем статьй про строительство.">
     
     <script src="/js/lib/typed.min.js" defer></script>
     <script src="/js/index.js" defer></script>
