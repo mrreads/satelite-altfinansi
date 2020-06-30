@@ -1,0 +1,10 @@
+User-Agent: *
+Disallow: 
+Allow: /
+Disallow: /route.php
+Disallow: /components
+Disallow: /css
+Disallow: /js
+Disallow: /img
+Disallow: /php
+Disallow: /sql
