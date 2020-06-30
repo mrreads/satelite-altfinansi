@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="/css/main.css">
     <meta name="description" 
     content="Мы - пишем статьй про строительство.">
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     
     <script src="/js/lib/typed.min.js" defer></script>
     <script src="/js/index.js" defer></script>

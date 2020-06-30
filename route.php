@@ -39,6 +39,9 @@
     <meta name="description" 
     content="<?=$discription?>">
     <link rel="stylesheet" href="/css/main.css">
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    
     <script src="/js/lib/typed.min.js" defer></script>
     <script src="/js/index.js"defer></script>
 </head>
