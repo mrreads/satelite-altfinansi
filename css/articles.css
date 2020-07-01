@@ -6,6 +6,7 @@ h1, p
 .textAnimated
 {
 	margin-top: 120px;
+
 	user-select: none;
 }
 
@@ -38,7 +39,6 @@ h1, p
 	opacity: 0.7;
 	/* color: #FFFFFF; */
 	color: #282727;
-	
 }
 
 .content
@@ -74,12 +74,12 @@ h1, p
 
 	width: 100%;
 	margin: 0px;
-	margin-bottom: 35px;
+	margin-bottom: 25px;
 	padding: 5px;
 
+	border-radius: 5px;
 	background-color: #FFFFFF;
 	box-shadow: 0 0 20px 0px rgba(0,0,0,0.09);
-	border-radius: 5px;
 
 	break-inside: avoid;
 	break-inside: avoid-column;
@@ -121,6 +121,11 @@ h1, p
 #forArticle .article__textContent p
 {
 	font-size: 20px;
+}
+
+.article__textContent p
+{
+	padding: 15px 5px 0px 5px;
 }
 
 .content__article > img
@@ -182,5 +187,4 @@ h1, p
 	padding-right: 50px;
 
 	opacity: 1;
-	
 }

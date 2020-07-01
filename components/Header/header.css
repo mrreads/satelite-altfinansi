@@ -88,8 +88,10 @@
 	opacity: 0.3;
 }
 
-.menu__item a
+.menu__item a, .dropdown__hover
 {
+	text-align: center;
+
 	color: #808080;
 }
 
@@ -114,7 +116,7 @@
 	transition: 0.8s all;
 	text-align: center;
 
-	color: #bdbdbd;
+	color: #BDBDBD;
 }
 
 .menu__dropdown a:hover
@@ -126,6 +128,7 @@
 .menu__dropdown
 {
 	position: absolute;
+	z-index: 5;
 	top: 49px;
 	left: 50%;
 

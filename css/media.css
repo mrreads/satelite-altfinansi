@@ -32,6 +32,10 @@
 
 @media screen and (max-width: 768px)
 {
+	#forArticle
+	{
+		margin-top: 100px;
+	}
 	.container
 	{
 		padding: 25px;
@@ -52,15 +56,19 @@
 	{
 		margin-bottom: 25px;
 	}
+	.header__heading a
+	{
+		text-align: center;
+	}
 	.header__menu
 	{
 		width: 100%;
 	}
-	.menu__item
+	.menu__item, .dropdown__wrapper
 	{
 		flex-grow: 1;
 	}
-	.textAnimated 
+	.textAnimated
 	{
 		margin-top: 150px;
 	}
@@ -70,11 +78,11 @@
 	}
 	#forArticle .article__textContent
 	{
-		padding: 25px 15px;
+		padding: 25px 7vw;
 	}
 	#forArticle .article__textContent p
 	{
-		font-size: 16px;
+		font-size: 18px;
 	}
 	#forArticle h2, #forArticle h3, #forArticle h4
 	{
@@ -92,15 +100,59 @@
 	{
 		display: block;
 
-		width: 300px;
+		width: 100%;
 		margin: 25px auto;
+
+		text-align: center;
+	}
+	.textAnimated
+	{
+		margin-top: 170px;
+	}
+	.footer .container
+	{
+		flex-flow: column nowrap;
+	}
+	.copyright
+	{
+		order: 10;
+
+		width: 100%;
+
+		text-align: center;
+	}
+	.phoneWrapper, .emailWrapper
+	{
+		justify-content: center;
+	}
+	.categoryWrapper
+	{
+		align-self: center;
+
+		margin: 55px 0;
 	}
 }
 
-@media screen and (max-width: 768px)
+@media screen and (max-width: 600px)
 {
-	.textAnimated 
+	.header__menu
 	{
-		margin-top: 170px;
+		flex-flow: column nowrap;
+	}
+	.menu__item, .dropdown__wrapper
+	{
+		width: 100%;
+	}
+	.header__heading a
+	{
+		font-size: 8vw;
+	}
+	.textAnimated
+	{
+		margin-top: 250px;
+	}
+	#forArticle
+	{
+		margin-top: 220px;
 	}
 }
